@@ -39,6 +39,9 @@ classifiers = [
 # ---- Main dependencies ----
 
 dependencies = [
+    "langchain-core>=1.2.11,<2.0.0",
+    "requests>=2.32.3",
+    "aiohttp>=3.11.14",
 ]
 
 
@@ -47,11 +50,14 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pytest>=9.0.3",
+    "pytest-asyncio>=0.23.2",
+    "pytest-socket>=0.7.0",
     "pytest-sugar>=1.1.1",
     "ruff>=0.15.12",
     "codespell>=2.4.2",
     "rich>=15.0.0",
     "basedpyright>=1.39.3",
+    "types-requests>=2.31.0",
     "funlog>=0.2.1",
 ]
 
@@ -149,7 +155,16 @@ reportAny = false
 reportExplicitAny = false
 reportImplicitStringConcatenation = false
 reportUnreachable = false
-# reportPrivateImportUsage = false
+reportIncompatibleVariableOverride = false
+reportUnknownArgumentType = false
+reportUnknownMemberType = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportMissingParameterType = false
+reportUnusedParameter = false
+reportImplicitOverride = false
+reportUnannotatedClassAttribute = false
+reportPrivateUsage = false
 # reportPrivateLocalImportUsage = false
 # reportMissingImports = false
 # reportUnnecessaryIsInstance = false
