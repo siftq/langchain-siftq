@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier. Do not edit manually.
+_commit: v0.2.26
+_src_path: gh:jlevy/simple-modern-uv
+package_author_email: hello@siftq.com
+package_author_name: SiftQ
+package_description: LangChain integration for SiftQ Web Search
+package_github_org: siftq
+package_module: langchain_siftq
+package_name: langchain-siftq
